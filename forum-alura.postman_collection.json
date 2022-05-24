@@ -1,0 +1,70 @@
+{
+	"variables": [],
+	"info": {
+		"name": "forum-alura",
+		"_postman_id": "cc15a6d7-e1ae-a80b-688a-63e7cddeb0b1",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "topicos",
+			"request": {
+				"url": "http://localhost:8080/topicos",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "topicos/id",
+			"request": {
+				"url": "http://localhost:8080/topicos/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "topicos/id",
+			"request": {
+				"url": "http://localhost:8080/topicos/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBUEkgZG8gRsOzcnVtIGRhIEFsdXJhIiwic3ViIjoiMiIsImlhdCI6MTY1MjY3MTczNCwiZXhwIjoxNjUyNzU4MTM0fQ.hpjXhcuz67oVxdCb5kBfJwr1Wb9J1lvu-bvUsGUloKg",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "auth",
+			"request": {
+				"url": "http://localhost:8080/auth",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"moderador@email.com\",\n\t\"senha\": \"123456\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
